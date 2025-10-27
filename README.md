@@ -188,6 +188,10 @@ The new.db now contains the same data as the vanilla database, but its structure
 To run regular queries, simply launch SQLite using ovfl_sqlite with the new.db file, and execute queries in the same way as before.
 
 
+## Acknowledgements
+
+- This project is a collaborative effort of Korea University and Hankuk University of Foreign Studies.
+
 ## Contact
 
 Jonghyeok Park jonghyeok_park@korea.ac.kr  
