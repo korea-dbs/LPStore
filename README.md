@@ -1,17 +1,17 @@
-# SAMA_SQLiteOP
+# SAMA_SOMA
 
-This is a github repository of SAMA, A SQLite project dedicated to analyze and optimize SQLite's Android Media Access Query Performance.
-The repository is separated into two parts : SAMBench and SQLite-OP.
+This is a github repository of SAMA_SOMA, A SQLite project dedicated to analyze and optimize SQLite's Android Media Access Query Performance.
+The repository consists of two parts : SAMA and SQLite-OP.
 
-# Part 1. SAMBench
+# Part 1. SAMA
 
 
 ## Introduction
 
-SAMBench is an SQLite Benchmark for specialized in Android Media Access Queries.
+SAMA is an SQLite Benchmark for specialized in Android Media Access Queries.
 Developed by researchers from Hankuk University of Foreign Studies, Korea University and Samsung Electronics, this comprehensive tool reflects Android system's interaction with SQLite engine.
-By leveraging media access queries collected from real Android applications, SAMBench offers more accurate and thorough analysis to users.
-SAMBench also provides interactive web-based dashboards, enabling users to grasp SQLite's performance with intuitive graphs, as well as to compare results from various configurations.
+By leveraging media access queries collected from real Android applications, SAMA offers more accurate and thorough analysis to users.
+SAMA also provides interactive web-based dashboards, enabling users to grasp SQLite's performance with intuitive graphs, as well as to compare results from various configurations.
 
 ## Features
 
@@ -21,7 +21,7 @@ SAMBench also provides interactive web-based dashboards, enabling users to grasp
 
 ## Architecture
 
-SAMBench comprises two main components: a web-based dashboard and a benchmark backend. The dashboard facilitates configuration management, query execution, and interactive analysis. The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
+SAMA comprises two main components: a web-based dashboard and a benchmark backend. The dashboard facilitates configuration management, query execution, and interactive analysis. The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
 
 ![dashboard](sambench/docs/SAMBench_dashboard.png)
 
@@ -46,7 +46,7 @@ SAMBench comprises two main components: a web-based dashboard and a benchmark ba
 1. Clone the repository and go to sambench directory:
 
    ```sh
-   git clone https://github.com/korea-dbs/sama_sqliteop.git
+   git clone https://github.com/korea-dbs/sama_soma.git
    cd sambench
    ```
 
@@ -56,7 +56,7 @@ SAMBench comprises two main components: a web-based dashboard and a benchmark ba
    cp .env.example .env
    vim .env
    ```
-   Fill in your Host IP address and Grafana login information.
+   - Fill in your Host IP address and Grafana login information.
 
 2. Start Infra Services:
 
@@ -77,7 +77,7 @@ SAMBench comprises two main components: a web-based dashboard and a benchmark ba
 
 1. Setup Enviornments
 
-Once you opened api server successfully, visit this link and execute apis below
+- Once you opened api server successfully, visit this link and execute apis below
 
 http://localhost:3000/api
 
@@ -87,25 +87,25 @@ PUT /setup/storage/push-scripts
 PUT /setup/storage/push-query
 ```
 
-After you finished your settings, you can enjoy api features.
+- After you finished your settings, you can enjoy api features.
 
-Our qry_cpy directory provides sample queries for SAMBench. You can use other queries if you want.
+- Our qry_cpy directory provides sample queries for SAMA. You can use other queries if you want.
 
 2. Setup Host Sqlite
 
-Modify your SQLite's Makefile, add the following to the CFLAGS:
+- Modify your SQLite's Makefile, add the following to the CFLAGS:
 ```
 CFLAGS =   -DVDBE_PROFILE -DSQLITE_DEBUG -DSQLITE_PERFORMANCE_TRACE
 ```
-Once you've finished this, compile the SQLite again.
+- Once you've finished this, compile the SQLite again.
 
 3. Open Grafana 
 
-Access the link below and login to the Grafana server. After that, go to [Dashboard] to monitor your device.
+- Access the link below and login to the Grafana server. After that, go to **[Dashboard]** to monitor your device.
 
 http://localhost:3001
 
-4. Run Dashboard
+4. **[Optional]** If you are not accustomed to api pages, visit the link below to run frontend. This provides more intuitive UI for Benchmark evaluation.
 
 http://localhost:3002
 
@@ -118,26 +118,17 @@ http://localhost:3002
 
 ## Demonstration
 
-SAMBench was demonstrated using a Google Pixel 7, showcasing its ability to construct realistic experimental environments and evaluate SQLite's performance under diverse conditions such as media file types and storage fragmentation.
+- SAMA was demonstrated using a Google Pixel 7. It showed capability to construct realistic experimental environments and evaluate SQLite's performance under diverse conditions. (i.e. media file types, storage fragmentation)
 
 ## License
 
 This work is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## Acknowledgments
 
-- This project is a collaborative effort between Hankuk University of Foreign Studies and Samsung Electronics.
-- Special thanks to all contributors and the open-source community for making this project possible.
-
-## Contact
-
-For any inquiries, please reach out to the authors through their provided email addresses.
+# Part 2. SOMA
 
 
-# Part 2. SQLite-OP
-
-
-SQLite-OP is an optimized version of SQLite, designed to handle overflow pages efficiently.
+SOMA is an optimized version of SQLite, designed to handle overflow pages efficiently.
 In this version, a specialized controller is implemented to manage overflow pages, aiming to improve performance for databases that contain a large number of such pages.
 
 ## Features
@@ -148,11 +139,10 @@ In this version, a specialized controller is implemented to manage overflow page
   The WAL frame header stores both the large payload page number and the regular database page number, and provides the correct mapping between them when the data is needed.
 
 
-
 ## Getting Started
 
 ### Build
-1. copy sqlite-op/src directory
+1. copy soma/src directory
 
 2. Install regular SQLite
 
@@ -195,10 +185,14 @@ cd [path to ovfl_sqlite bld dir]
 The new.db now contains the same data as the vanilla database, but its structure has been modified to store overflow pages separately. 
 To run regular queries, simply launch SQLite using ovfl_sqlite with the new.db file, and execute queries in the same way as before.
 
+## Acknowledgments
 
-## Acknowledgements
+- This project is a collaborative effort between Hankuk University of Foreign Studies, Samsung Electronics and Korea University.
+- Special thanks to all contributors and the open-source community for making this project possible.
 
-- This project is a collaborative effort of Korea University and Hankuk University of Foreign Studies.
+## Contact
+
+For any inquiries, please reach out to the email addresses down below.
 
 ## Contact
 
