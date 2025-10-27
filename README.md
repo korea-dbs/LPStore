@@ -23,7 +23,7 @@ SAMA also provides interactive web-based dashboards, enabling users to grasp SQL
 
 SAMA comprises two main components: a web-based dashboard and a benchmark backend. The dashboard facilitates configuration management, query execution, and interactive analysis. The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
 
-![dashboard](sambench/docs/SAMBench_dashboard.png)
+![dashboard](sama/docs/SAMBench_dashboard.png)
 
 ## Getting Started
 
@@ -47,7 +47,7 @@ SAMA comprises two main components: a web-based dashboard and a benchmark backen
 
    ```sh
    git clone https://github.com/korea-dbs/sama_soma.git
-   cd sambench
+   cd sama
    ```
 
 2. Change Env Value:
