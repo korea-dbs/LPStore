@@ -1,7 +1,7 @@
 # SAMA_SQLiteOP
 
 This is a github repository of SAMA, A SQLite project dedicated to analyze and optimize SQLite's Android Media Access Query Performance.
-The repository is separated into two parts : SAMBench and SQLite-OP.
+The repository consists of two parts : SAMBench and SQLite-OP.
 
 # Part 1. SAMBench
 
