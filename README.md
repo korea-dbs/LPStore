@@ -43,19 +43,20 @@ SAMBench comprises two main components: a web-based dashboard and a benchmark ba
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository and go to sambench directory:
 
    ```sh
-   git clone https://github.com/hufs-ids/sambench.git
+   git clone https://github.com/korea-dbs/sama_sqliteop.git
    cd sambench
    ```
 
-2. Change Env Values:
+2. Change Env Value:
 
    ```sh
    cp .env.example .env
    vim .env
    ```
+   Fill in your Host IP address and Grafana login information.
 
 2. Start Infra Services:
 
@@ -76,7 +77,7 @@ SAMBench comprises two main components: a web-based dashboard and a benchmark ba
 
 1. Setup Enviornments
 
-Visit this link and execute apis below
+Once you opened api server successfully, visit this link and execute apis below
 
 http://localhost:3000/api
 
@@ -86,15 +87,21 @@ PUT /setup/storage/push-scripts
 PUT /setup/storage/push-query
 ```
 
+After you finished your settings, you can enjoy api features.
+
+Our qry_cpy directory provides sample queries for SAMBench. You can use other queries if you want.
+
 2. Setup Host Sqlite
 
-To modify the Makefile, add the following to the CFLAGS:
-
+Modify your SQLite's Makefile, add the following to the CFLAGS:
 ```
 CFLAGS =   -DVDBE_PROFILE -DSQLITE_DEBUG -DSQLITE_PERFORMANCE_TRACE
 ```
+Once you've finished this, compile the SQLite again.
 
-3. Login to Grafana
+3. Open Grafana 
+
+Access the link below and login to the Grafana server. After that, go to [Dashboard] to monitor your device.
 
 http://localhost:3001
 
