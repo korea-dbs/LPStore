@@ -47,7 +47,7 @@ SAMA comprises two main components: a web-based dashboard and a benchmark backen
 
    ```sh
    git clone https://github.com/korea-dbs/sama_soma.git
-   cd sambench
+   cd sama
    ```
 
 2. Change Env Value:
