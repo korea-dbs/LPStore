@@ -1,17 +1,17 @@
 # SAMA_SOMA
 
-This is a github repository of SAMA, A SQLite project dedicated to analyze and optimize SQLite's Android Media Access Query Performance.
-The repository consists of two parts : SAMBench and SQLite-OP.
+This is a github repository of SAMA_SOMA, A SQLite project dedicated to analyze and optimize SQLite's Android Media Access Query Performance.
+The repository consists of two parts : SAMA and SQLite-OP.
 
-# Part 1. SAMBench
+# Part 1. SAMA
 
 
 ## Introduction
 
-SAMBench is an SQLite Benchmark for specialized in Android Media Access Queries.
+SAMA is an SQLite Benchmark for specialized in Android Media Access Queries.
 Developed by researchers from Hankuk University of Foreign Studies, Korea University and Samsung Electronics, this comprehensive tool reflects Android system's interaction with SQLite engine.
-By leveraging media access queries collected from real Android applications, SAMBench offers more accurate and thorough analysis to users.
-SAMBench also provides interactive web-based dashboards, enabling users to grasp SQLite's performance with intuitive graphs, as well as to compare results from various configurations.
+By leveraging media access queries collected from real Android applications, SAMA offers more accurate and thorough analysis to users.
+SAMA also provides interactive web-based dashboards, enabling users to grasp SQLite's performance with intuitive graphs, as well as to compare results from various configurations.
 
 ## Features
 
@@ -21,7 +21,7 @@ SAMBench also provides interactive web-based dashboards, enabling users to grasp
 
 ## Architecture
 
-SAMBench comprises two main components: a web-based dashboard and a benchmark backend. The dashboard facilitates configuration management, query execution, and interactive analysis. The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
+SAMA comprises two main components: a web-based dashboard and a benchmark backend. The dashboard facilitates configuration management, query execution, and interactive analysis. The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
 
 ![dashboard](sambench/docs/SAMBench_dashboard.png)
 
@@ -46,7 +46,7 @@ SAMBench comprises two main components: a web-based dashboard and a benchmark ba
 1. Clone the repository and go to sambench directory:
 
    ```sh
-   git clone https://github.com/korea-dbs/sama_sqliteop.git
+   git clone https://github.com/korea-dbs/sama_soma.git
    cd sambench
    ```
 
@@ -89,7 +89,7 @@ PUT /setup/storage/push-query
 
 - After you finished your settings, you can enjoy api features.
 
-- Our qry_cpy directory provides sample queries for SAMBench. You can use other queries if you want.
+- Our qry_cpy directory provides sample queries for SAMA. You can use other queries if you want.
 
 2. Setup Host Sqlite
 
@@ -118,7 +118,7 @@ http://localhost:3002
 
 ## Demonstration
 
-- SAMBench was demonstrated using a Google Pixel 7. It showed capability to construct realistic experimental environments and evaluate SQLite's performance under diverse conditions. (i.e. media file types, storage fragmentation)
+- SAMA was demonstrated using a Google Pixel 7. It showed capability to construct realistic experimental environments and evaluate SQLite's performance under diverse conditions. (i.e. media file types, storage fragmentation)
 
 ## License
 
