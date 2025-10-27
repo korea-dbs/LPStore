@@ -1,16 +1,17 @@
 # SAMA_SQLiteOP
 
-This is a github repository with two Mobile SQLite Related Projects : SAMA and SQLite-OP.
+This is a github repository of SAMA, A SQLite project dedicated to analyze and optimize SQLite's Android Media Access Query Performance.
+The repository is separated into two parts : SAMBench and SQLite-OP.
 
 # Part 1. SAMBench
 
-SQLite Benchmark for Android Media Access
 
 ## Introduction
 
-SAMBench offers intuitive web-based dashboards and allows users to evaluate media access performance on different configurations, leveraging media access queries collected from Android applications
-
-SAMBench is a comprehensive benchmarking tool designed to analyze the performance of SQLite database systems with a focus on media access in Android environments. Developed by researchers from Hankuk University of Foreign Studies and Samsung Electronics, this tool addresses the gap in understanding media access's impact on SQLite performance within Android systems. By leveraging media access queries collected from real Android applications, SAMBench offers a nuanced analysis through interactive web-based dashboards, enabling users to evaluate media access performance under various configurations.
+SAMBench is an SQLite Benchmark for specialized in Android Media Access Queries.
+Developed by researchers from Hankuk University of Foreign Studies, Korea University and Samsung Electronics, this comprehensive tool reflects Android system's interaction with SQLite engine.
+By leveraging media access queries collected from real Android applications, SAMBench offers more accurate and thorough analysis to users.
+SAMBench also provides interactive web-based dashboards, enabling users to grasp SQLite's performance with intuitive graphs, as well as to compare results from various configurations.
 
 ## Features
 
@@ -22,7 +23,7 @@ SAMBench is a comprehensive benchmarking tool designed to analyze the performanc
 
 SAMBench comprises two main components: a web-based dashboard and a benchmark backend. The dashboard facilitates configuration management, query execution, and interactive analysis. The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
 
-![dashboard](docs/SAMBench_dashboard.png)
+![dashboard](sambench/docs/SAMBench_dashboard.png)
 
 ## Getting Started
 
@@ -144,33 +145,32 @@ In this version, a specialized controller is implemented to manage overflow page
 ## Getting Started
 
 ### Build
-1. Install the SQLite-OP
-```
-[git clone https://github.com/korea-dbs/sama.git]
-```
+1. copy sqlite-op/src directory
 
+2. Install regular SQLite
 
-2. Configure
+3. Swap original SQLite's src directory with 2.
+
+4. Configure SQLite with SQLite-OP's source data
 ```
-cd ovfl-sqlite
 mkdir bld && cd bld
-../src/configure
+../configure
 ```
 
-3. Compile
+5. Compile
 ```
 make -j
 sudo make install -j
 ```
 
-## Run
-4. Make Overflow DB
+### Run
+1. Make Overflow DB
    Generate a dump.sql file from the original (vanilla) database that you want to separate into an overflow database.
 ```
 vanilla_sqlite3[this sqlite engine is vanilla_sqlite] dump > dump.sql
 ```
 
-5. Prepare new db
+2. Prepare new db
 ```
 vanilla_sqlite3 [new DB file(.db)]
 PRAGMA journal_mode = WAL;
@@ -178,12 +178,13 @@ PRAGMA journal_mode = WAL;
 ```
 
 
-6. Read dump
+3. Read dump from 1. 
 ```
 cd [path to ovfl_sqlite bld dir]
 ./sqlite3 [new DB file(.db)]
 .read dump.sql[Path to dump.sql]
 ```
+
 The new.db now contains the same data as the vanilla database, but its structure has been modified to store overflow pages separately. 
 To run regular queries, simply launch SQLite using ovfl_sqlite with the new.db file, and execute queries in the same way as before.
 
