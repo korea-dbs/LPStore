@@ -101,11 +101,11 @@ CFLAGS =   -DVDBE_PROFILE -DSQLITE_DEBUG -DSQLITE_PERFORMANCE_TRACE
 
 3. Open Grafana 
 
-- Access the link below and login to the Grafana server. After that, go to [Dashboard] to monitor your device.
+- Access the link below and login to the Grafana server. After that, go to **[Dashboard]** to monitor your device.
 
 http://localhost:3001
 
-4. [Optional] If you are not accustomed with api pages, visit the link below to run frontend. This provides more intuitive UI for Benchmark evaluation.
+4. **[Optional]** If you are not accustomed to api pages, visit the link below to run frontend. This provides more intuitive UI for Benchmark evaluation.
 
 http://localhost:3002
 
@@ -118,20 +118,11 @@ http://localhost:3002
 
 ## Demonstration
 
-SAMBench was demonstrated using a Google Pixel 7, showcasing its ability to construct realistic experimental environments and evaluate SQLite's performance under diverse conditions such as media file types and storage fragmentation.
+- SAMBench was demonstrated using a Google Pixel 7. It showed capability to construct realistic experimental environments and evaluate SQLite's performance under diverse conditions. (i.e. media file types, storage fragmentation)
 
 ## License
 
 This work is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
-
-## Acknowledgments
-
-- This project is a collaborative effort between Hankuk University of Foreign Studies and Samsung Electronics.
-- Special thanks to all contributors and the open-source community for making this project possible.
-
-## Contact
-
-For any inquiries, please reach out to the authors through their provided email addresses.
 
 
 # Part 2. SQLite-OP
@@ -146,7 +137,6 @@ In this version, a specialized controller is implemented to manage overflow page
   The Large Payload Controller enables the separation of regular pages and overflow pages, allowing them to be stored in different storage devices.
 - **Wal Frame header**:
   The WAL frame header stores both the large payload page number and the regular database page number, and provides the correct mapping between them when the data is needed.
-
 
 
 ## Getting Started
@@ -195,10 +185,14 @@ cd [path to ovfl_sqlite bld dir]
 The new.db now contains the same data as the vanilla database, but its structure has been modified to store overflow pages separately. 
 To run regular queries, simply launch SQLite using ovfl_sqlite with the new.db file, and execute queries in the same way as before.
 
+## Acknowledgments
 
-## Acknowledgements
+- This project is a collaborative effort between Hankuk University of Foreign Studies, Samsung Electronics and Korea University.
+- Special thanks to all contributors and the open-source community for making this project possible.
 
-- This project is a collaborative effort of Korea University and Hankuk University of Foreign Studies.
+## Contact
+
+For any inquiries, please reach out to the email addresses down below.
 
 ## Contact
 
