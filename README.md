@@ -12,15 +12,6 @@ SAMBench offers intuitive web-based dashboards and allows users to evaluate medi
 
 SAMBench is a comprehensive benchmarking tool designed to analyze the performance of SQLite database systems with a focus on media access in Android environments. Developed by researchers from Hankuk University of Foreign Studies and Samsung Electronics, this tool addresses the gap in understanding media access's impact on SQLite performance within Android systems. By leveraging media access queries collected from real Android applications, SAMBench offers a nuanced analysis through interactive web-based dashboards, enabling users to evaluate media access performance under various configurations.
 
-## Authors
-
-- Jisub Kim (Hankuk University of Foreign Studies) - <0226daniel@hufs.ac.kr>
-- Sehyun Park (Hankuk University of Foreign Studies) - <sarah1918@hufs.ac.kr>
-- Hyeeun Jun (Samsung Electronics) - <hyeeun.jun@samsung.com>
-- Kisung Lee (Samsung Electronics) - <kiras.lee@samsung.com>
-- Woojoong Lee (Samsung Electronics) - <woojoong.lee@samsung.com>
-- Jonghyeok Park (Hankuk University of Foreign Studies) - <jonghyeok.park@hufs.ac.kr>
-
 ## Features
 
 - **Comprehensive Analysis**: Evaluates SQLite's performance in handling media access within Android, highlighting the implications of media files on database operations.
@@ -68,7 +59,7 @@ SAMBench comprises two main components: a web-based dashboard and a benchmark ba
 2. Start Infra Services:
 
    ```sh
-   docker compos up -d
+   docker compose up -d
    ```
    
 3. Start Api Server:
