@@ -1,4 +1,4 @@
-# SAMA_SQLiteOP
+# SAMA_SOMA
 
 This is a github repository of SAMA, A SQLite project dedicated to analyze and optimize SQLite's Android Media Access Query Performance.
 The repository consists of two parts : SAMBench and SQLite-OP.
@@ -125,10 +125,10 @@ http://localhost:3002
 This work is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 
-# Part 2. SQLite-OP
+# Part 2. SOMA
 
 
-SQLite-OP is an optimized version of SQLite, designed to handle overflow pages efficiently.
+SOMA is an optimized version of SQLite, designed to handle overflow pages efficiently.
 In this version, a specialized controller is implemented to manage overflow pages, aiming to improve performance for databases that contain a large number of such pages.
 
 ## Features
@@ -142,7 +142,7 @@ In this version, a specialized controller is implemented to manage overflow page
 ## Getting Started
 
 ### Build
-1. copy sqlite-op/src directory
+1. copy soma/src directory
 
 2. Install regular SQLite
 
