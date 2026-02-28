@@ -49,7 +49,7 @@ After that, install SQLite as vanilla module.
 
 To install LPStore\_Libsql, substitue LibSQL's src with LPStore\_Libsql directory, then install as vanilla modules.
 
-### How to prepare DB with LPStore (with LPStore\_SQLite)
+### How to prepare DB with LPStore (with LPStore\_SQLite, LPStore\_Libsql)
 1. Prepare database 
    Generate a dump.sql file from the original SQLite (We'll reference it as 'vanilla') database that you want to use in LPStore environment.
 ```
@@ -66,7 +66,7 @@ PRAGMA journal_mode = WAL;
 
 3. Read dump from 1. 
 ```
-cd [path to ovfl_sqlite bld dir]
+cd [path to LPStore\_SQLite build dir]
 ./sqlite3 [new DB file(.db)]
 .read dump.sql[Path to dump.sql]
 ```
