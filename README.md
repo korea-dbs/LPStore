@@ -89,7 +89,9 @@ LPAnalyzer also provides interactive web-based dashboards, enabling users to gra
 
 ## Architecture
 
-LPAnalyzer comprises two main components: a web-based dashboard and a benchmark backend. The dashboard facilitates configuration management, query execution, and interactive analysis. The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
+LPAnalyzer comprises two main components: a web-based dashboard and a benchmark backend.
+The dashboard facilitates configuration management, query execution, and interactive analysis.
+The backend handles API requests, executes commands on Android devices via adb, and collects performance metrics for analysis.
 
 ![dashboard](LPAnalyzer/docs/SAMBench_dashboard.png)
 
