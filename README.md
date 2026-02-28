@@ -15,6 +15,29 @@ In this repository, you can get our prototype LPStore modules implemented on SQL
 
 ##Our Repo's architecture
 
+LPStore
+├── evaluation
+│   ├── app-tester
+│   ├── band.py
+│   ├── iologre_log.py
+│   ├── queries
+│   └── vdbe_parser.py
+├── filetree.txt
+├── LPAnalyzer
+│   ├── api
+│   ├── docker-compose.yml
+│   ├── docs
+│   ├── front
+│   ├── grafana
+│   └── prometheus
+├── LPStore_Libsql
+│   └── src
+├── LPStore_SQLite
+│   └── src
+└── README.md
+
+
+
 #LPStore Prototypes
 
 Our project developed LPStore product with SQLite and LibSQL, which are lightweight database modules.
