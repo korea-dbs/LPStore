@@ -14,7 +14,7 @@ It is based on three core features: Separated File Management, Large Payload Pre
 In this repository, you can get our prototype LPStore modules implemented on SQLite and LibSQL, as well as our tools used for analysis and evaluation.
 
 ##Our Repo's architecture
-
+```
 LPStore
 ├── evaluation
 │   ├── app-tester
@@ -35,7 +35,7 @@ LPStore
 ├── LPStore_SQLite
 │   └── src
 └── README.md
-
+```
 
 
 #LPStore Prototypes
