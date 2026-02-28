@@ -66,7 +66,7 @@ PRAGMA journal_mode = WAL;
 
 3. Read dump from 1. 
 ```
-cd [path to LPStore\_SQLite build dir]
+cd [path to LPStore_SQLite build dir]
 ./sqlite3 [new DB file(.db)]
 .read dump.sql[Path to dump.sql]
 ```
