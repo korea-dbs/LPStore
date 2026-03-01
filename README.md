@@ -1,8 +1,8 @@
-# LPStore
+# LPStore: SQLite Optimization for Large Payalod Management
 
 This is a github repository of LPStore project, developed by researchers from Korea University, Hankuk University of Foreign Studies and Washington University.
 
-#What Is LPStore?
+# What Is LPStore?
 
 LPStore is a new architecture for page-based database, dedicated for effective large-payload management.
 It is based on three core features: Separated File Management, Large Payload Prefetching and Grouped Eviction.
@@ -13,7 +13,7 @@ It is based on three core features: Separated File Management, Large Payload Pre
 
 In this repository, you can get our prototype LPStore modules implemented on SQLite and LibSQL, as well as our tools used for analysis and evaluation.
 
-##Our Repo's architecture
+## Project Structure
 ```
 LPStore
 ├── evaluation
@@ -41,7 +41,7 @@ After that, install SQLite as vanilla module.
 
 To install LPStore\_Libsql, substitue LibSQL's src with LPStore\_Libsql directory, then install as vanilla modules.
 
-### How to prepare DB with LPStore (with LPStore\_SQLite)
+### How to prepare DB with LPStore (with LPStore\_SQLite, LPStore\_Libsql)
 1. Prepare database 
    Generate a dump.sql file from the original SQLite (We'll reference it as 'vanilla') database that you want to use in LPStore environment.
 ```
@@ -58,7 +58,7 @@ PRAGMA journal_mode = WAL;
 
 3. Read dump from 1. 
 ```
-cd [path to ovfl_sqlite bld dir]
+cd [path to LPStore_SQLite build dir]
 ./sqlite3 [new DB file(.db)]
 .read dump.sql[Path to dump.sql]
 ```
@@ -198,10 +198,9 @@ For any inquiries, please reach out to the email addresses down below.
 
 ## Contact
 
-Jonghyeok Park jonghyeok_park@korea.ac.kr  
-
-Dohwan Lee dohwan0123@hufs.ac.kr
-
-Dongkyun Chung cdk6042@korea.ac.kr
+- Dohwan Lee dohwan0123@hufs.ac.kr
+- Dongkyun Chung cdk6042@korea.ac.kr
+- Jonggyu Park jonggyu@cs.washington.edu
+- Jonghyeok Park jonghyeok_park@korea.ac.kr  
 
 
