@@ -13,7 +13,7 @@ It is based on three core features: Separated File Management, Large Payload Pre
 
 In this repository, you can get our prototype LPStore modules implemented on SQLite and LibSQL, as well as our tools used for analysis and evaluation.
 
-## Project
+## Project Structure
 ```
 LPStore
 ├── evaluation
@@ -206,12 +206,9 @@ For any inquiries, please reach out to the email addresses down below.
 
 ## Contact
 
-Dohwan Lee dohwan0123@hufs.ac.kr
-
-Dongkyun Chung cdk6042@korea.ac.kr
-
-Jonggyu Park jonggyu@cs.washington.edu
-
-Jonghyeok Park jonghyeok_park@korea.ac.kr  
+- Dohwan Lee dohwan0123@hufs.ac.kr
+- Dongkyun Chung cdk6042@korea.ac.kr
+- Jonggyu Park jonggyu@cs.washington.edu
+- Jonghyeok Park jonghyeok_park@korea.ac.kr  
 
 
