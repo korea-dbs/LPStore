@@ -23,9 +23,7 @@ LPStore
 │   ├── queries
 │   └── vdbe_parser.py
 ├── LPStore_Libsql
-│   └── src
 ├── LPStore_SQLite
-│   └── src
 └── README.md
 ```
 
@@ -36,10 +34,10 @@ Our project developed LPStore product with SQLite and LibSQL, which are lightwei
 Although LPStore's architectures can be applied for regular page-based databases, these simple implementations would give users a glimpse of LPStore's efficiency, as well as its high applicability.
 
 ##How to Install
-To install LPStore\_SQLite, substitute SQLite's src directory with this repository's LPstore\_SQLite/src directory.
+To install LPStore\_SQLite, substitute SQLite's src directory with this repository's *LPstore\_SQLite* directory.
 After that, install SQLite as vanilla module.
 
-To install LPStore\_Libsql, substitue LibSQL's src with LPStore\_Libsql directory, then install as vanilla modules.
+To install LPStore\_Libsql, substitue LibSQL's src direcotry with *LPStore\_Libsql* directory, then install as vanilla modules.
 
 ### How to prepare DB with LPStore (with LPStore\_SQLite, LPStore\_Libsql)
 1. Prepare database 
