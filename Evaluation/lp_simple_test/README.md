@@ -7,8 +7,7 @@ lp_simple_test
 ├── generators
 ├── query
 ├── README.md
-├── texts
-└── tree.txt
+└── texts
 ```
 
 ## Environment
@@ -19,6 +18,7 @@ We used python3.9 to generate payloads and databases.
 
 ## How to conduct test
 1. Generating payloads
+
 *texts* directory's samp.txt is a sample 4KB text payload.
 Use copy.py program to increase payload size to multiple of 4KB.
 
