@@ -1,8 +1,8 @@
-# LPStore
+# LPStore: SQLite Optimization for Large Payalod Management
 
 This is a github repository of LPStore project, developed by researchers from Korea University, Hankuk University of Foreign Studies and Washington University.
 
-#What Is LPStore?
+# What Is LPStore?
 
 LPStore is a new architecture for page-based database, dedicated for effective large-payload management.
 It is based on three core features: Separated File Management, Large Payload Prefetching and Grouped Eviction.
@@ -13,7 +13,7 @@ It is based on three core features: Separated File Management, Large Payload Pre
 
 In this repository, you can get our prototype LPStore modules implemented on SQLite and LibSQL, as well as our tools used for analysis and evaluation.
 
-##Our Repo's architecture
+## Project
 ```
 LPStore
 ├── evaluation
