@@ -1,6 +1,8 @@
+# Evaluation Tools
 This directory gathers tools for our **LPStore** project evaluation.
 
-##Structure of this Directory
+## Structure of this Directory
+ 
 ```
 Evaluation
 ├── app-tester
@@ -12,20 +14,20 @@ Evaluation
 └── vdbe_parser.py
 ```
 
-###app-tester
+### app-tester
 This is a simple testing app that emulates Android OS's gallery applications.
 The application calculates its total running in three different categories; DB execution, UI rendering, and other operations.
 
 *app-tester* directory's app is targeted for Android 33, and compiled with v.11 jvm.
 Minimal SDK is version 24.
 
-###How to install app-tester
+### How to install app-tester
 Once you build this app with android studio, install this into Android machine via ADB.
 
-###lp\_simple\_test
+### lp\_simple\_test
 This directory contains simple test kit that access large payload's impact on DuckDB, SQLite and MySQL.
 
-###queries
+### queries
 All of the media queries we've extracted is located in this directory.
 
 ###other programs.

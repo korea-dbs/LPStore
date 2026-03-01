@@ -22,14 +22,14 @@ LPStore
 └── README.md
 ```
 
-###Evaluation
+### Evaluation
 *Evaluation* Directory contains tools developed to evaluate LPStore\_SQLite modules.
 
-###LPStore Prototypes
+### LPStore Prototypes
 Our project developed LPStore product with SQLite and LibSQL, which are lightweight database modules.
 Although LPStore's architectures can be applied for regular page-based databases, these simple implementations would give users a glimpse of LPStore's efficiency, as well as its high applicability.
 
-###How to Install
+### How to Install
 To install LPStore\_SQLite, substitute SQLite's src directory with this repository's *LPstore\_SQLite* directory.
 After that, install SQLite as vanilla module.
 
