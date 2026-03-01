@@ -1,0 +1,8 @@
+../lp_simple_test
+├── generators
+├── query
+├── README.md
+├── texts
+└── tree.txt
+
+3 directories, 2 files

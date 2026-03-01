@@ -1,24 +1,22 @@
 #About this Directory
 
-This directory stores all queries we've extracted and gathered for our LPStore experiment.
+This directory stores media queries, extracted and gathered for evaluation.
 
-The
+##Structure of this Directory
+```
+queries
+├── leftovers
+├── README.md
+└── used
+```
 
-All queries in media\_access directory are extracted from the Android applications.
-Appilcations' name are abbreviated into acronyms.
+##How did we extracted it
+We used Google Pixel 7 device with Android 13 OS and root previleges.
 
-Since Media Access Queries does not use Complex JOIN method, all six query's execution plan is mainly about searching data from columns fitting with given WHERE clause. 
-Media Access Queries can be classified into two categories: [LP-None] and [LP-Full].
+We gathered 29 queries from 10 different apps.
+Queries' application names are abbreviated into acronyms.
+Among them, six applications were elected to represent Media Access Queries' general behavior. 
+Those six queries are stored in *used* directory.
+23 leftover queries are stored in *leftovers*.
 
-[LP-None] type queries are E, F, G and S. This type does not retrieve large payload column of the Android MediaDB filess.
-[LP-None] pattern does not require SQLite to traverse all pages, resulting in low overflow page access.
-[LP-None] does not require much temporary space to gather information either,
-[LP-None] type queries can be effectively managed with LPStore's Separate File Managment policy.
-...
-
-[LP-Full] type queries are I and M. This type access every column data with MediaDB, including large payload data such as XMP.
-[LP-Full]'s such behavior requires buffer retreival, increasing the number of I/O request on data page access.
-Moreover, [LP-Full] may require large dataspace to allocate its massive record in temporary tables.
-[LP-Full] type queries can be effectively managed with LPStore's IO Prefetching.
-...
 
