@@ -3,7 +3,7 @@ This directory's tools are developed for simple test, in order to quantify large
 
 ## Structure of this Directory
 ```
-lp\_simple\_test
+lp_simple_test
 ├── generators
 ├── query
 ├── README.md
