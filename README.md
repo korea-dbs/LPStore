@@ -81,7 +81,7 @@ For any inquiries, please reach out to the email addresses down below.
 
 ## Contact
 
-- Dohwan Lee dohwan0123@hufs.ac.kr
+- Dohwan Lee dohwan0123@korea.ac.kr
 - Dongkyun Chung cdk6042@korea.ac.kr
 - Jonggyu Park jonggyu@cs.washington.edu
 - Jonghyeok Park jonghyeok_park@korea.ac.kr  
